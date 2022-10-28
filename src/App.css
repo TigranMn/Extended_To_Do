@@ -1,14 +1,50 @@
 body {
 	padding: 10px;
+	background-color: #EAE2B7;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Aboreto', cursive;
+	color: #003049;
 }
 
-* {
-	box-sizing: border-box;
+h4,
+h5,
+h6 {
+	font-weight: 400;
+}
+
+h1 {
+	width: 100%;
+	text-align: center;
+}
+
+button {
+	border: none;
+	width: 50%;
+	max-height: 30px;
+	border-radius: 20px;
+	padding: 3px 0px 3px 0px;
+}
+
+button:hover {
+	cursor: pointer;
+	opacity: 0.7;
+}
+
+::-webkit-scrollbar {
+	width: 1px;
+	background: transparent;
+}
+::-webkit-scrollbar-thumb {
+	background: black;
 }
 
 .wrapper {
 	display: flex;
-	justify-content: space-between;
+	gap: 20px;
 	flex-wrap: wrap;
 }
 .modal {
