@@ -40,6 +40,10 @@ button:hover {
 	opacity: 0.7;
 }
 
+::placeholder {
+	color: #003049;
+}
+
 ::-webkit-scrollbar {
 	width: 1px;
 	background: transparent;
