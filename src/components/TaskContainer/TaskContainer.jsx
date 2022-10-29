@@ -17,7 +17,10 @@ export default function TaskContainer({ status, data, onDelete }) {
 		<>
 			<div className="taskContainer">
 				<h1>{status}</h1>
-				<button onClick={toggleAdding}>Add</button>
+				<button onClick={toggleAdding}>
+					Add
+					<i class="fa-solid fa-plus"></i>
+				</button>
 				{isAdding ? <Modal status={status} adding toggleEdit={toggleAdding} ></Modal> : ''}
 				{data.map((el) => {
 					return (

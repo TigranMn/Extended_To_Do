@@ -14,10 +14,16 @@ export default function Task({id,title,description,category,status, handleDelete
 		<h4>{category}</h4>
 		<p>{description}</p>
 		<button className = "editBtn" 
-				  onClick = { toggleEdit }>Edit</button>
+			onClick = { toggleEdit }>
+			Edit
+			<i class="fa-regular fa-pen-to-square"></i>
+		</button>
 		<button
-				  className="removeBtn"
-				  onClick = { () => handleDelete(id) }>Remove</button>
+			className="removeBtn"
+			onClick = { () => handleDelete(id) }>
+			Remove
+			<i class="fa-solid fa-trash"></i>	
+		</button>
 		{onEdit ? 
 		<Modal title = {title} 
 				 id = {id}

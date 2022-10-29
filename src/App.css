@@ -10,6 +10,12 @@ body {
 	color: #003049;
 }
 
+i {
+	color: white;
+	font-size: 16px;
+	margin-left: 15px;
+}
+
 h4,
 h5,
 h6 {
@@ -23,7 +29,7 @@ h1 {
 
 button {
 	border: none;
-	width: 50%;
+	width: 30%;
 	max-height: 30px;
 	border-radius: 20px;
 	padding: 3px 0px 3px 0px;
