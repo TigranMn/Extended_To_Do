@@ -59,15 +59,7 @@ button:hover {
 	display: flex;
 	justify-content: center;
 }
-.editBox {
-	height: 100%;
-	width: 60%;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
-	color: black;
-}
+
 .editBox > * {
 	height: 50px;
 	background-color: grey;

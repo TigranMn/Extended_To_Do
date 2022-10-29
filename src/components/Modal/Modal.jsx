@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useContext } from "react";
 import { Context } from "../../App";
+import "./css/Modal.css"
 
 export default function Modal({id,title,description,category,status,toggleEdit,adding}) {
 	const [currTitle, setTitle] = useState(title  || null)
@@ -26,7 +27,7 @@ export default function Modal({id,title,description,category,status,toggleEdit,a
 	return (
 		<div className="modal">
 			<div className="editBox">
-				<h3>Edit</h3>
+				<h3>{adding ? "Add" : "Edit"}</h3>
 				<input
 					type={"text"}
 					value={currTitle}
@@ -53,20 +54,22 @@ export default function Modal({id,title,description,category,status,toggleEdit,a
 						</option>
 					))}
 				</select>
-				<button
-					onClick={() =>
-						handleConfirm(
-							id || null,
-							currCategory,
-							currDescription,
-							currTitle,
-							currStatus
-						)
-					}
-				>
-					{adding ? "Add" : "Save"}
-				</button>
-				<button onClick={handleClose}>Close</button>
+				<div className="btnContainer">
+					<button
+						onClick={() =>
+							handleConfirm(
+								id || null,
+								currCategory,
+								currDescription,
+								currTitle,
+								currStatus
+							)
+						}
+					>
+						{adding ? "Add" : "Save"}
+					</button>
+					<button onClick={handleClose}>Close</button>
+				</div>
 			</div>
 		</div>
 	);
